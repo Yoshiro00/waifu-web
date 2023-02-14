@@ -1,0 +1,67 @@
+<html>
+    <title>WebApp</title>
+    <body>
+        <button class="button1" id="buttonid1">
+            <h1 class="button1text">TAP ME</h1>
+        </button>
+
+        <div class="waifu1" id="waifuid1">
+            
+        </div>
+
+
+        
+        <style>
+            body{
+                background-image: url(Bg3.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .button1{
+                position: absolute;
+                height: 100px;
+                width: 150px;
+                left: 43%;
+                top: 70%;
+                background-image: url(Arrow.png);
+                background-size: 150px 100px;
+                background-repeat: no-repeat;
+                border: none;
+                background-color: transparent;
+            }
+
+            .button1text{
+                position: absolute;
+                top: 90%;
+                left: 20%;
+            }
+
+            .waifu1{
+                position: absolute;
+                background-size: 600px 750px;
+                background-image: url(pngegg.png);
+                width: 600px;
+                height: 600px;
+                padding: 72px 8px;
+                bottom: -600px;
+                left: 27%;
+                transition: bottom 2s;
+            }
+
+        </style>
+        <script>
+            window.addEventListener('load', function() {
+                let button = document.querySelector('#buttonid1');
+                let div = document.querySelector('#waifuid1');
+
+                button.addEventListener('click', function() {
+                    div.style.bottom = "20px";
+                });
+            });
+        </script>
+    </body>
+</html>
