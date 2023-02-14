@@ -2,10 +2,12 @@
     <title>AppSelection</title>
 
     <body>
+        <div class="ranbutton" id="ranbuttonid">Hi im a button lol dont tap</div>
+
         <div class="div1" id="divid1">
             <h1 class="paw">Pick a Waifu</h1>
 
-            <div class="kita" id="Kitaid">
+            <div class="kita" id="kitaid">
                 <a href="kita.html">
                     <bUTton class="kitabutton">
                         <h1>Kita Ikuyo</h1>
@@ -55,7 +57,8 @@
                 height: 400px;
                 width: 100px;
                 top: 1%;
-                left: 10%;
+                right: 1000px;
+                transition: right 2s;
             }
             
             .tsumigi{
@@ -66,7 +69,8 @@
                 height: 390px;
                 width: 100px;
                 top: 6%;
-                left: 70%;
+                left: 1000px;
+                transition: left 2s;
             }
 
             .kitabutton{
@@ -83,9 +87,31 @@
                 background-repeat: no-repeat;
                 background-color: transparent;
             }
+
+            .ranbutton{
+                position: absolute;
+                top: 10%;
+                left: 43%;
+                background-repeat: no-repeat;
+                background-color: transparent;
+            }
         </style>
         <script>
+            window.addEventListener('load', function() {
+                let button = document.querySelector('#ranbuttonid');
 
+                button.addEventListener('click', function() {
+                    alert("Why Tap")
+                });
+            });
+
+            window.addEventListener('load', function(){
+                let kita = document.querySelector('#kitaid');
+                let tsumigi = document.querySelector('#tsumigiid');
+
+                kita.style.right = "10%";
+                tsumigi.style.left = "20%";
+            })
         </script>
     </body>
 </Html>
