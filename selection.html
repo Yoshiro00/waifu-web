@@ -6,9 +6,8 @@
             <div class="ranbutton" id="ranbuttonid">Hi im a button lol dont tap</div>
         </a>
 
+        <h1 class="paw">Pick a Waifu</h1>
         <div class="div1" id="divid1">
-            <h1 class="paw">Pick a Waifu</h1>
-
             <div class="kita" id="kitaid">
                 <a href="kita.html">
                     <bUTton class="kitabutton">
@@ -20,6 +19,13 @@
                 <a href="tsumigi.html">
                     <bUTton class="tsumigibutton" >
                         <h1>Tsumugi Kotobuki</h1>
+                    </bUTton>
+                </a>
+            </div>
+            <div class="bocchi" id="bocchiid">
+                <a href="app.html">
+                    <bUTton class="bocchibutton" >
+                        <h1>Hitori Gotou</h1>
                     </bUTton>
                 </a>
             </div>
@@ -75,6 +81,18 @@
                 transition: left 2s;
             }
 
+            .bocchi{
+                position: absolute;
+                background-image: url(BocchiPNG.png);
+                background-size: 190px 490px;
+                padding: 5px 60px;
+                height: 500px;
+                width: 80px;
+                top: -1000px;
+                left: 41%;
+                transition: top 2s;
+            }
+
             .kitabutton{
                 position: absolute;
                 top: 110%;
@@ -86,6 +104,14 @@
             .tsumigibutton{
                 position: absolute;
                 top: 110%;
+                background-repeat: no-repeat;
+                background-color: transparent;
+            }
+
+            .bocchibutton{
+                position: absolute;
+                top: 95%;
+                left: -9%;
                 background-repeat: no-repeat;
                 background-color: transparent;
             }
@@ -102,9 +128,11 @@
             window.addEventListener('load', function(){
                 let kita = document.querySelector('#kitaid');
                 let tsumigi = document.querySelector('#tsumigiid');
+                let bocchi = document.querySelector('#bocchiid')
 
-                kita.style.right = "10%";
-                tsumigi.style.left = "20%";
+                kita.style.right = "1%";
+                tsumigi.style.left = "10%";
+                bocchi.style.top = "-1%";
             })
         </script>
     </body>
