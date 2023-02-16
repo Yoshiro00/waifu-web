@@ -15,13 +15,13 @@ window.addEventListener('load', function() {
     switch(var2){
         default:
         case var2 = 0:
-            document.getElementById('appheaderid').innerText = var2[0];
+            header1.textContent = "Hello";
             break;
-        case var2 > 10:
-            document.getElementById('appheaderid').innerText = var2[1];
+        case var2 = 10:
+            header1.textContent = "Im Under The Water";
             break;
-        case var2 > 20:
-            document.getElementById('appheaderid').innerText = var2[2];
+        case var2 = 20:
+            header1.textContent = "Please Help me";
             break;
     }
 });
