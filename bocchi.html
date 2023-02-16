@@ -1,0 +1,35 @@
+<html>
+    <title>BocchiPadoru</title>
+
+    <body>
+        <div class="bocchi"></div>
+
+        <style>
+            body{
+                background-image: url(img/bg1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            @keyframes bocchianim {
+                0%   {background-color:transparent; left:-20%; top:40%;}
+                100%  {background-color:transparent; left:200%; top:40%;}
+            }
+
+            .bocchi{
+                position: absolute;
+                background-size: 200px 200px;
+                background-image: url(img/Bocchi.png);
+                height: 200px;
+                width: 200px;
+                animation-name: bocchianim;
+                animation-duration: 20s;
+                left: -20%;
+                top: 40%;
+            }
+        </style>
+    </body>
+</html>

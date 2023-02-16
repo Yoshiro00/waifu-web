@@ -1,35 +1,31 @@
 <html>
-    <title>BocchiPadoru</title>
+    <title>APP</title>
 
     <body>
-        <div class="bocchi"></div>
+        <h1 class="appheader" id="appheaderid">Hello World</h1>
+        <span class="appnum" id="appnumid">0</span>
+
+        <button class="appbutton" id="appbuttonid"></button>
 
         <style>
-            body{
-                background-image: url(img/bg1.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                height: 100vh;
-                overflow: hidden;
+            .appheader{
+                text-align: center;
             }
 
-            @keyframes bocchianim {
-                0%   {background-color:transparent; left:-20%; top:40%;}
-                100%  {background-color:transparent; left:200%; top:40%;}
-            }
-
-            .bocchi{
+            .appbutton{
                 position: absolute;
-                background-size: 200px 200px;
-                background-image: url(img/Bocchi.png);
-                height: 200px;
-                width: 200px;
-                animation-name: bocchianim;
-                animation-duration: 20s;
-                left: -20%;
-                top: 40%;
+                height: 100px;
+                width: 100px;
+                top: 50%;
+                left: 46%;
+            }
+
+            .appnum{
+                position: absolute;
+                top: 10%;
+                left: 50%;
             }
         </style>
+        <script src="app.js"></script>
     </body>
 </html>
