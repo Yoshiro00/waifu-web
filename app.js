@@ -27,6 +27,10 @@ function MiniTextBot() {
         case inputBox = "How are you?":
             text = "I'm good, how about you? :)";
             break;
+        case inputBox = "":
+            alert("say something, don't be shy")
+            text = "say something";
+            break;
         case inputBox = "01195":
             text = "tap this link";
             buttonShow.style.left = "30%";
