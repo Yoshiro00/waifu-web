@@ -2,28 +2,113 @@
     <title>APP</title>
 
     <body>
-        <h1 class="appheader" id="appheaderid">Hello World</h1>
-        <span class="appnum" id="appnumid">0</span>
+        <div class="box1">
+            <div class="dialougeBox">
+                <h1 class="appheader" id="appheaderid">Hello!! Say Something :)</h1>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="inputText">
+                <button onclick="MiniTextBot()">Try it</button>
 
-        <button class="appbutton" id="appbuttonid"></button>
+                <div class="link1" id="linkid1">
+                    <a href="surprise.html"><button>Meet my Brother :)</button></a>
+                </div>
+            </div>
+            <div class="waifuPor" id="waifuPorid"></div>
+        </div>
+        <div class="box2">
+            <span class="appnum" id="appnumid">0</span>
+            <button class="appbutton" id="appbuttonid"></button>            
+        </div>
 
         <style>
-            .appheader{
-                text-align: center;
+            body{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 100vh;
             }
 
-            .appbutton{
+            .box1{
+                position: relative;
+                width: 26.7cm;
+                height: 20cm;
+                padding: 100px;
+                background-color: lightgray;
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                background-image: url(img/bg2.jpg);
+            }
+
+            .inputBox{
                 position: absolute;
                 height: 100px;
                 width: 100px;
                 top: 50%;
-                left: 46%;
+                left: 15%;
+            }
+
+            .dialougeBox{
+                position: absolute;
+                background-color: aliceblue;
+                box-shadow: 5px 10px;
+                padding: 80px 150px;
+                height: 100px;
+                width: 100px;
+                top: 10%;
+                left: 10%;
+            }
+
+            .link1{
+                position: absolute;
+                top: 80px;
+                left: -1000%;
+                transition: 1s;
+            }
+
+            .appheader{
+                position: absolute;
+                text-align: left;
+                left: 10px;
+                top: 10px;
+            }
+
+            .waifuPor{
+                position: absolute;
+                background-image: url(img/por1.png);
+                background-size: 550px 800px;
+                padding: 500px 200px;
+                right: 10px;
+                height: 100px;
+                width: 100px;
+            }
+
+            .box2{
+                position: relative;
+                width: 26.7cm;
+                height: 20cm;
+                padding: 100px;
+                background-color: lightgray;
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: aliceblue;
             }
 
             .appnum{
                 position: absolute;
                 top: 10%;
                 left: 50%;
+            }
+
+            .appbutton{
+                position: absolute;
+                height: 100px;
+                width: 100px;
+                top: 20%;
+                left: 46%;
             }
         </style>
         <script src="app.js"></script>
